@@ -4,8 +4,9 @@ class Person:
         self.name = name
 
     def __add__(self, other_obj):
-        p1 = Person("Dragan", self.age + other_obj.age)
-        return p1
+        self.p = Person("Dragan", self.age + other_obj.age)
+        print(self.p.name, self.p.age)
+        return self.p
 
     def __sub__(self, other_obj):
         return self.age - other_obj.age
@@ -20,4 +21,4 @@ class Person:
 
 p1 = Person("Goshko", 15)
 p2 = Person("Ivan", 14)
-print(p2 + p1)
+print(p1 + p2)
