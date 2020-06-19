@@ -7,7 +7,7 @@
             <div class="date">
                 {{ post.created }}
             </div>
-            <img src="{% static "meme.png" %}" alt="My image">
+            <img src="{% static "meme.png" %}" alt="My image" style="width:8em; height: 8em;>
             <h2><a href="/detail/{{ post.id}}">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
